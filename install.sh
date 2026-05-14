@@ -74,7 +74,11 @@ echo "Nemo:     ПКМ по видео → 'Play on 3 Monitors (XPlay)'"
 echo "Открыть с помощью: XPlay появится в списке приложений рядом с mpv"
 echo ""
 echo "─── Настройте глобальные хоткеи вручную ──────────────────────────────"
-echo "  System Settings → Shortcuts → Custom Shortcuts → Edit → New → Command"
+if [[ "$XDG_CURRENT_DESKTOP" == *"KDE"* ]]; then
+    echo "  KDE: System Settings → Shortcuts → Custom Shortcuts"
+else
+    echo "  Ubuntu (GNOME): Settings → Keyboard → Shortcuts → Custom Shortcuts"
+fi
 echo ""
 echo "  Действие            Команда"
 echo "  ─────────────────────────────────────────────────────────────────────"

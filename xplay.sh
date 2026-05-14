@@ -38,15 +38,15 @@ fi
 
 rm -f "$SOCK_0" "$SOCK_1" "$SOCK_2"
 
-mpv $MPV_OPTS --screen=$SCREEN_3 --fs --mute --start=$OFFSET_3 --input-ipc-server="$SOCK_2" "$FILE" &
+mpv $MPV_OPTS --screen=$SCREEN_3 --fs --mute --loop --start=$OFFSET_3 --input-ipc-server="$SOCK_2" "$FILE" &
 echo $! >> "$PID_FILE"
 sleep 0.1
 
-mpv $MPV_OPTS --screen=$SCREEN_1 --fs --mute --start=$OFFSET_1 --input-ipc-server="$SOCK_0" "$FILE" &
+mpv $MPV_OPTS --screen=$SCREEN_1 --fs --mute --loop --start=$OFFSET_1 --input-ipc-server="$SOCK_0" "$FILE" &
 echo $! >> "$PID_FILE"
 sleep 0.1
 
-mpv $MPV_OPTS --screen=$SCREEN_2 --fs --mute --start=$OFFSET_2 --input-ipc-server="$SOCK_1" "$FILE" &
+mpv $MPV_OPTS --screen=$SCREEN_2 --fs --mute --loop --start=$OFFSET_2 --input-ipc-server="$SOCK_1" "$FILE" &
 echo $! >> "$PID_FILE"
 sleep 0.1
 

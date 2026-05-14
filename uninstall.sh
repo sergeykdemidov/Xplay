@@ -32,5 +32,4 @@ fi
 
 echo "XPlay uninstalled."
 echo ""
-echo "Не забудьте вручную удалить хоткеи в:"
-echo "  System Settings → Shortcuts → Custom Shortcuts"
+echo "Не забудьте вручную удалить хоткеи в настройках системы."

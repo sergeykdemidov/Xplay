@@ -6,7 +6,7 @@
 
 - Linux, X11
 - [mpv](https://mpv.io/) (`sudo apt install mpv`)
-- KDE Plasma 6 (Dolphin)
+- KDE Plasma 6 (Dolphin) или Ubuntu (Nemo)
 - Python 3 (для `xplay-seek`)
 
 ## Установка
@@ -18,13 +18,15 @@ chmod +x install.sh
 ./install.sh
 ```
 
-`install.sh` копирует скрипты в `~/.local/bin/` и регистрирует пункт контекстного меню в Dolphin.
+`install.sh` копирует скрипты в `~/.local/bin/` и регистрирует пункт контекстного меню в Dolphin и Nemo.
 
-После установки скрипт выведет команды для ручной настройки глобальных хоткеев в **System Settings → Shortcuts → Custom Shortcuts**.
+После установки скрипт выведет команды для ручной настройки глобальных хоткеев:
+- **KDE:** System Settings → Shortcuts → Custom Shortcuts
+- **Ubuntu (GNOME):** Settings → Keyboard → Keyboard Shortcuts → View and Customise Shortcuts → Custom Shortcuts
 
 ## Использование
 
-**Через Dolphin:** правая кнопка мыши по видеофайлу → *Play on 3 Monitors (XPlay)*
+**Через Dolphin/Nemo:** правая кнопка мыши по видеофайлу → *Play on 3 Monitors (XPlay)*
 
 **Из терминала:**
 ```bash
@@ -61,4 +63,4 @@ MPV_OPTS="--vo=gpu --gpu-api=opengl --loop-file"
 ./uninstall.sh
 ```
 
-Хоткеи нужно удалить вручную в **System Settings → Shortcuts → Custom Shortcuts**.
+Хоткеи нужно удалить вручную в настройках системы.
